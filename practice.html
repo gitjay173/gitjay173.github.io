@@ -1,0 +1,65 @@
+
+<html>
+<head>
+<title>Pactice</title>
+<Script>
+/*
+let S=0
+let n=1
+
+while(n<=7){
+	S=S+n;
+	n++;
+}
+console.log("Final",S)
+*/
+/*
+let sum=0
+n1=prompt("Enter a number here:","")
+n1=parseInt(n1)
+for(let n=1;n<=n1;n++){
+	sum=sum+n;
+}
+alert("Ans:"+sum);
+*/
+
+//質數判斷
+n1=prompt("Enter a number:","7")
+n1=parseInt(n1)
+
+if(n1==2){
+		alert("Prime");
+}else{
+	for(let i=2;i<n1;i++){
+		if(n1%i==0){
+			//console.log(n1%i,i);
+			alert("not Prime");
+			break;
+		}
+
+		else if(i==n1-1){ //除到輸入的數前一個才停止前一個才停止
+			//console.log(n1%i,i);
+			alert("Prime");
+		}
+		
+
+	}	
+}
+
+/*
+let i=0
+while(i<=100){
+	console.log("這個數字是"+i);
+	i++;
+}
+*/
+/*
+n=prompt("Enter a number:","")
+n=parseInt(n)
+for(let i=0;i<=n;i++){
+	console.log("This number is "+i);
+}
+*/
+</Script>
+</head>
+</html>
