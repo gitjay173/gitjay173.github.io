@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<meta charset ="utf-8" />
+<title>Pactice2</title>
+<Script>
+function Line(x1,y1,x2,y2){
+	this.x1=x1;
+	this.y1=y1;
+	this.x2=x2;
+	this.y2=y2;
+}
+
+
+let a=new Array(3)
+for(let i=0;i<=3;i++){
+	a[i]=prompt("第一條線的四個座標")
+	a[i]=parseInt(a[i])
+}
+
+let b=new Array(3)
+for(let j=0;j<=3;j++){
+	b[j]=prompt("第二條線的四個座標")
+	b[j]=parseInt(b[j])
+}
+confirm("你確定要輸入"
++a[0]+" ,"+a[1]+" ,"+a[2]+" ,"+a[3]+"  ;  "+b[0]+" ,"+b[1]+" ,"+b[2]+" ,"+b[3]+" ,"
++"這八個座標？");
+
+
+let line1=new Line(a[0],a[1],a[2],a[3]);
+let line2=new Line(b[0],b[1],b[2],b[3]);
+ls1=Math.abs((line1.y2-line1.y1)/(line1.x2-line1.x1))
+ls2=Math.abs((line2.y2-line2.y1)/(line2.x2-line2.x1))
+
+if(ls1==ls2){
+	console.log("線段平行")
+}else{
+	console.log("線段不平行")
+
+}
+
+</Script>
+</head>
+</html>
